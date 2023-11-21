@@ -121,7 +121,7 @@ public:
 	bool readPowerSupply(const uint8_t* deviceAddress = nullptr);
 
 	// get global resolution
-	uint8_t getResolution();
+	uint8_t getResolution() const;
 
 	// set global resolution to 9, 10, 11, or 12 bits
 	void setResolution(uint8_t);

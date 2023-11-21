@@ -3,11 +3,11 @@
 cc_library(
     name = "roo_dallas_temperature",
     includes = [
-        ".",
+        "src",
     ],
     srcs =
-        glob(["*.cpp"]) + 
-        glob(["*.h"]),
+        glob(["src/**/*.cpp"]) +
+        glob(["src/**/*.h"]),
     visibility = ["//visibility:public"],
     defines = [
         "ROO_TESTING",

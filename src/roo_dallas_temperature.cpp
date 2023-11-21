@@ -346,7 +346,7 @@ bool DallasTemperature::setResolution(const uint8_t* deviceAddress,
 
 
 // returns the global resolution
-uint8_t DallasTemperature::getResolution() {
+uint8_t DallasTemperature::getResolution() const {
 	return bitResolution;
 }
 
